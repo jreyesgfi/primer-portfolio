@@ -1,0 +1,43 @@
+.parallax-deep{
+    position:fixed;
+    z-index:100;
+}
+
+img {
+    max-height: 100%;
+}
+
+.parallax-container{
+    background-color: rgba(255, 0, 0, 0);
+    border: 5px solid red;
+    width:100vw;
+    height: 300vh;
+    box-sizing: content-box;
+
+    position: absolute;
+    z-index:100;
+    top:var(--nav-bar-height);
+}
+
+.screen{
+    border: 5px solid rgb(30, 255, 0);
+    width:100vw;
+    height: calc( 100vh - var(--nav-bar-height) );
+    position:relative;
+}
+
+
+.brain-image-container{
+    --brain-image-height:65vh;
+    height:var(--brain-image-height);
+
+    position:absolute;
+    top: calc( (100vh - var(--brain-image-height)) /3);
+    left:0px;
+    right:0px;
+    margin:auto;
+}
+
+.brain-image-container img{
+    position:absolute;
+}
